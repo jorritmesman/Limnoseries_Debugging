@@ -1,8 +1,15 @@
+# GLEON Workshop on Debugging
+# GLEON Limnoseries 2023 - May
+# Author: Jorrit Mesman
 
+# This sets your working directory to the location where your script is saved
+# (Remove in case running outside Rstudio)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
+# Set TZ to UTC to avoid problems with time zones
 Sys.setenv(TZ = "UTC")
 
+# Load packages
 library(data.table)
 library(ggplot2)
 
